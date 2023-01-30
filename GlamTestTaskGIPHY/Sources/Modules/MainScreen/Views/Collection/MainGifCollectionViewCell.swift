@@ -64,6 +64,10 @@ final class MainGifCollectionViewCell: UICollectionViewCell {
             self?.dataIsNowLoading = true
         }
     }
+    
+    func showLoading() {
+        let light = UIColor(white: 0, alpha: 0.1).cgColor
+        
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.clear.cgColor, light, UIColor.clear.cgColor]
         gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
