@@ -35,8 +35,8 @@ final class MainGifCollectionViewCell: UICollectionViewCell {
         
         dataIsNowLoading = false
         
-        gifImageView.prepareForReuse()
         gifImageView.image = nil
+        gifImageView.prepareForReuse()
         
         shimmerLayer?.removeFromSuperlayer()
         shimmerLayer = nil
@@ -44,6 +44,8 @@ final class MainGifCollectionViewCell: UICollectionViewCell {
     
     //MARK: - API
     func configure(with model: MainGifCollectionViewModel) {
+        if gifLink == model.gifLink { return }
+        
         gifLink = model.gifLink
         
         gifImageView.backgroundColor = .random
@@ -55,15 +57,13 @@ final class MainGifCollectionViewCell: UICollectionViewCell {
             else { return }
             
             self?.shimmerLayer?.removeFromSuperlayer()
+            
+            let freezeImage = UIImage(data: gifData)
+            self?.gifImageView.image = freezeImage
             self?.gifImageView.animate(withGIFData: gifData)
             self?.dataIsNowLoading = true
         }
     }
-    
-    //MARK: - Private Methods
-    private func showLoading() {
-        let light = UIColor(white: 0, alpha: 0.1).cgColor
-
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.clear.cgColor, light, UIColor.clear.cgColor]
         gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
