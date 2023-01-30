@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "58320fe80522414bf3a7e24c88123581dc586752"
+      }
+    },
+    {
+      "identity" : "waterfalllayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Jinya/WaterfallLayout.git",
+      "state" : {
+        "revision" : "4ada125c5b8fc9c1755f4b5a03ce94f054b469d1",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
