@@ -57,7 +57,7 @@
 		296CE289CC29228987AB9F67 /* Pods_GlamTestTaskGIPHY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlamTestTaskGIPHY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B25BD09A9FFDB13FC8EE71E /* Pods-GlamTestTaskGIPHY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlamTestTaskGIPHY.release.xcconfig"; path = "Target Support Files/Pods-GlamTestTaskGIPHY/Pods-GlamTestTaskGIPHY.release.xcconfig"; sourceTree = "<group>"; };
 		94605597195986B846557E21 /* Pods-GlamTestTaskGIPHY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlamTestTaskGIPHY.debug.xcconfig"; path = "Target Support Files/Pods-GlamTestTaskGIPHY/Pods-GlamTestTaskGIPHY.debug.xcconfig"; sourceTree = "<group>"; };
-		D936A1D829853B0A00C32413 /* Glam "Clone".app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glam \"Clone\".app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D936A1D829853B0A00C32413 /* Giphy "Clone".app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giphy \"Clone\".app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D936A1DB29853B0A00C32413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D936A1DD29853B0A00C32413 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D936A1DF29853B0A00C32413 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		D936A1D929853B0A00C32413 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D936A1D829853B0A00C32413 /* Glam "Clone".app */,
+				D936A1D829853B0A00C32413 /* Giphy "Clone".app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 				D936A2472986BE0000C32413 /* WaterfallLayout */,
 			);
 			productName = GlamTestTaskGIPHY;
-			productReference = D936A1D829853B0A00C32413 /* Glam "Clone".app */;
+			productReference = D936A1D829853B0A00C32413 /* Giphy "Clone".app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -684,7 +684,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmmolod.GlamTestTaskGIPHY;
-				PRODUCT_NAME = "Glam \"Clone\"";
+				PRODUCT_NAME = "Giphy \"Clone\"";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -718,7 +718,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmmolod.GlamTestTaskGIPHY;
-				PRODUCT_NAME = "Glam \"Clone\"";
+				PRODUCT_NAME = "Giphy \"Clone\"";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
