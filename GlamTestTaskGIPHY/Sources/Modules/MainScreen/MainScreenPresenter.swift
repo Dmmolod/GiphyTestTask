@@ -189,7 +189,7 @@ extension GifModel {
             mediumLink: model.images.medium.url,
             originalLink: model.images.original.url,
             giphyLink: model.url,
-            height: CGFloat(Int(model.images.small.height) ?? 0)
+            height: CGFloat(Int(model.images.medium.height ?? "") ?? 100)
         )
     }
 }

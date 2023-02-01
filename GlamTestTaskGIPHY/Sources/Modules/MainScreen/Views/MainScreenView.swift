@@ -50,14 +50,17 @@ final class MainScreenView: UIView {
         
         sectionsView.didSelectSectionAction = { [weak self] type in
             self?.delegate?.didSelectSection(type)
-            self?.collection.scrollToItem(
-                at: .init(
-                    item: 0,
-                    section: 0
-                ),
-                at: .top,
-                animated: false
-            )
+            
+            if self?.collection.visibleCells.isEmpty == false {
+                self?.collection.scrollToItem(
+                    at: .init(
+                        item: 0,
+                        section: 0
+                    ),
+                    at: .top,
+                    animated: false
+                )
+            }
         }
         
         collection.didScrollToEndAction = { [weak self] in
