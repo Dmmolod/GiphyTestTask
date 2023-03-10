@@ -10,11 +10,11 @@ import UIKit
 final class MainSectionsView: UIView {
     
     //MARK: - Public Properties
-    var didSelectSectionAction: ((MainSectionType) -> ())?
+    var didSelectSectionAction: (((type: MainSectionType, animated: Bool)) -> ())?
     
     //MARK: - Private Properties
     private var buttons: [UIButton] = []
-    private var currentSelected: UIButton?
+    private var currentSelected: MainSectionButton?
     private let scrollView = UIScrollView()
     private let stackView = UIStackView()
     
@@ -48,12 +48,13 @@ final class MainSectionsView: UIView {
     //MARK: - Target Methods
     @objc
     private func sectionDidSelect(_ sender: MainSectionButton) {
+        let needAnimate = currentSelected?.type == sender.type
         currentSelected?.isSelected = false
         sender.isSelected = true
         
         currentSelected = sender
         
-        didSelectSectionAction?(sender.type)
+        didSelectSectionAction?((type: sender.type, animated: needAnimate))
     }
     
     //MARK: - Private Methods
