@@ -48,17 +48,17 @@ final class MainScreenView: UIView {
     //MARK: - Private Methods
     private func setupActions() {
         
-        sectionsView.didSelectSectionAction = { [weak self] type in
-            self?.delegate?.didSelectSection(type)
+        sectionsView.didSelectSectionAction = { [weak self] info in
+            self?.delegate?.didSelectSection(info.type)
             
-            if self?.collection.visibleCells.isEmpty == false {
+            if self?.collection.visibleSize != .zero {
                 self?.collection.scrollToItem(
                     at: .init(
                         item: 0,
                         section: 0
                     ),
                     at: .top,
-                    animated: false
+                    animated: info.animated
                 )
             }
         }

@@ -17,6 +17,7 @@ final class MainGifCollectionView: UICollectionView {
     
     //MARK: - Private Properties
     private var items: [GifModel] = []
+    private var randomCachedColors: [Int: UIColor] = [:]
     
     //MARK: - Initializers
     init() {
@@ -68,14 +69,21 @@ extension MainGifCollectionView: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: MainGifCollectionViewCell.identifier,
             for: indexPath
-        )
+        ) as? MainGifCollectionViewCell
+        
         let cellModel = MainGifCollectionViewModel(
             gifLink: model.mediumLink,
             fetchGifAction: fetchGifAction
         )
-        (cell as? MainGifCollectionViewCell)?.configure(with: cellModel)
         
-        return cell
+        let cachedColor = randomCachedColors[indexPath.item]
+        cell?.configure(with: cellModel, cachedColor: cachedColor)
+        
+        if let currentBackgroundColor = cell?.currentBackgroudColor {
+            randomCachedColors.updateValue(currentBackgroundColor, forKey: indexPath.item)
+        }
+        
+        return cell ?? UICollectionViewCell()
     }
     
 }
