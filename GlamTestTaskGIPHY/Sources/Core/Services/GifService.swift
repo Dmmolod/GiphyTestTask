@@ -64,7 +64,7 @@ extension GifService {
         
         let fileName = urlIdPath + urlTypePath
         
-        return cacheDirectoryUrl.appending(path: fileName).path()
+        return cacheDirectoryUrl.appendingPathComponent(fileName).path
     }
     
 }
