@@ -9,7 +9,7 @@ import Foundation
 
 struct ApiClient {
     
-    private let apiKey = "5WyCA3cahR3B9rbZaVfDZkv15oSp389P"
+    private let apiKey = _YOUR_GIPHY_API_KEY
     let host: String
     
     init(host: String = "api.giphy.com") {
