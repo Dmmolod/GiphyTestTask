@@ -1,3 +1,4 @@
+![][ios] ![][swift] ![][uikit]  ![][MVP] ![][urlSession]  ![][snapKit]  ![][filemanager] ![][photos] ![][WaterfallLayout] ![][Gifu] ![][spm] ![][cocoapods]
 # Giphy "clone".
 
 ### Описание:
@@ -11,6 +12,7 @@
 - Избежать подлагиваний коллекции при скролле.
 - Реализовать детальный просмотр выбранной гифки с возможность поделиться ей, сохранить в галерею или скопировать ссылку на сайт.
 - Реализовать возможость делиться гифкой сразу в несколько популярных сервисов (iMessage, Facebook, SnapChat, WhatsApp, Instagram, Twitter).
+- Пагинация.
 
 ----
 
@@ -32,6 +34,7 @@
 - Можно отправить гиф сразу по iMessage, или поделиться через дефолтный выбор доступных приложений.
 - Есть возможность скопировать ссылку на гиффку одник кликом.
 - Есть возможность сохранить гифку в галлерею.
+- Подгрузка контента по необходимости при скролле. 
 
 ----
 ### Приложение в движении с отображением затрат на память
@@ -45,6 +48,17 @@
 |Открытие детального экрана|Копирование ссылки|Поделиться/Сохранить в галлерею|
 |![][detail]|![][copy]|![][save]|
 
+|Пагинация <br> (гифка весит больше остальных, может чуть дольше грузить)|
+|:-:|
+|![][pagination]|
+
+# Как попробовать?
+- Заведит учетную запись для разработчика на giphy.
+- Получите API KEY.
+- В файле `GiphyApi.swift`, на `12` строчке, присвойте ваш ключ приватному полю `apiKey`.
+
+> Путь до файла `GlamTestTaskGIPHY/Sources/Core/Api/GiphyApi.swift`
+
 [01]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/01.gif
 [02]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/02.gif
 [03]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/03.gif
@@ -53,3 +67,17 @@
 [detail]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/openDetail.gif
 [copy]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/copyLink.gif
 [save]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/saveAndShare.gif
+[pagination]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/pagination.gif
+
+[ios]: https://img.shields.io/badge/iOS-13.0-critical
+[swift]: https://img.shields.io/badge/-Swift-9cf
+[uikit]: https://img.shields.io/badge/-UIKit-blue
+[snapkit]: https://img.shields.io/badge/-SnapKit-9cf
+[urlSession]: https://img.shields.io/badge/-URLSession-blue
+[MVP]: https://img.shields.io/badge/-MVP-9cf
+[filemanager]: https://img.shields.io/badge/-FileManager-blue
+[photos]: https://img.shields.io/badge/-Photos-9cf
+[WaterfallLayout]: https://img.shields.io/badge/-WaterfallLayout-blue
+[Gifu]: https://img.shields.io/badge/-Gifu-9cf
+[spm]: https://img.shields.io/badge/-SPM-ff69b4
+[cocoapods]: https://img.shields.io/badge/-CocoaPods-ff69b4
