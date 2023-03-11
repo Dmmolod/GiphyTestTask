@@ -36,10 +36,18 @@
 ----
 ### Приложение в движении с отображением затрат на память
 
-|Главный экран|Переключение категорий|Просмотр гифки <br> поделиться|
-|:-:|:-:|:-:|
-|![][01]|![][02]|![][03]|
+
+|Главный экран|Анимация при <br> плохом интернете|Переключение категорий|
+|:|:|:|
+|![][01]|![][load]|![][change]|
+|Открытие детального экрана|Копирование ссылки|Поделиться/Сохранить в галлерею|
+|![][detail]|![][copy]|![][save]|
 
 [01]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/01.gif
 [02]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/02.gif
 [03]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/03.gif
+[load]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/loadShimmer.gif
+[change]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/ChangeCategory.gif
+[detail]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/openDetail.gif
+[copy]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/copyLink.gif
+[save]: https://github.com/Dmmolod/GiphyTestTask/blob/master/Gifs/saveAndShare.gif
